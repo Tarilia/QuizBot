@@ -10,7 +10,10 @@ packages = [{include = "quiz_bot"}]
 python = "^3.10"
 aiogram = "^3.13.0"
 aiosqlite = "^0.20.0"
+python-dotenv = "^1.0.1"
 
+[tool.poetry.scripts]
+bot = "quiz_bot.main:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.1.1"
